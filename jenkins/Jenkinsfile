@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven-3.9.2' // Use the name of the Maven installation
+    }
     stages {
         stage('Build') {
             steps {
